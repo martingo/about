@@ -1,0 +1,26 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 50px; /* Margin bottom by footer height */
+  font-family: 'Kulim Park', sans-serif;
+  font-size: 16px;
+}
+
+
+.pool-links
+{
+  font-size: 12px;
+  margin-top: -0.2rem;  
+}
+
+.pool-links a {
+    color: rgba(0,0,0) !important;
+}
+
+.mt-5b {
+  margin: 0;
+  padding: 0;
+}
