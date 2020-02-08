@@ -12,6 +12,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <link href="./css/flag-icon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   </head>
   
   <body>
@@ -28,27 +30,38 @@
 -->
         <div class="col-lg-12 text-center">
           <h1 class="mt-4">Straight Pool</h1>
-          <p class="pool-links">ticker: STR8 | zero fixed fee | 4% variable fee | <a href="https://adapools.org/3a192bc7285d7ddfd77c0b854b4008bbf4c5fe53d1ad42770f6ffdf9b3d4c7d6" target="_blank" rel="noopener noreferrer">adapools.org profile <i class="fa fa-external-link " ></i></a></p>
+          <p class="pool-links">Ticker: STR8 | Zero fixed fee | 4% variable fee | <a href="https://adapools.org/3a192bc7285d7ddfd77c0b854b4008bbf4c5fe53d1ad42770f6ffdf9b3d4c7d6" target="_blank" rel="noopener noreferrer">Adapools.org profile <i class="fa fa-external-link " ></i></a></p>
           <img src="./SP-Logo.svg" width="250px" />
           <p class="font-italic">"The only time you should ever look back, is to see how far you've come."</p>
         </div>
       </div>
+
+<div class="container-fluid">
+    <div class="row my-5">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h4 class="text-center">Live Pool Stats</h4>
+        <div class="d-flex justify-content-center font-weight-bolder">
+          <div class="p-2 bg-bright flex-fill">Epoch: <span id="ptepoch" class="display-xl"></span></div>
+          <div class="p-2 bg-bright flex-fill">Slot: <span id="ptslot" class="display-xl"></span></div>
+          <div class="p-2 bg-bright flex-fill">Height: <span id="ptheight" class="display-xl"></span></div>
+          <div class="p-2 bg-bright flex-fill">Live Stake: <span id="ptstake" class="display-xl"></span></div>
+          <div class="p-2 bg-bright flex-fill">Epoch Blocks: <span id="pteblocks" class="display-xl"></span></div>
+        </div>
+        <div>
+          <p class="text-center text-md-right">Courtesy of <a href="https://pooltool.io"  target="_blank"><img class="ptwidget" src="https://pooltool.io/pooltoollogosm.png"> PoolTool.io</a><br/><span class="ptwidget">Data updates every 60 seconds.</span></p>
+        </div>
+      </div>
+    </div>
+</div>
 
       <div class="row">
         <div class="col-lg-12 text-left">
           <h4 class="mt-4">What is your mission statement?</h4>
           <p>The "Cardano Straight ADA Stakepool" aims to secure the Cardano network by running a competitive 24/7 pool on decentralized infrastructure maintained by IT professionals. The low fees ensure longevity and sustainability of the pool, there is no other purpose, thus the name of our pool. This pool intention is to provide reliable Cardano infrastructure / protocol service with high desirability for you as a delegator. 
           </p>
-          Delegate your stake to us, and we will pay you high rewards. It is risk free to delegate your stake, and you will earn interest by simply holding your ADA.
-
-          <a id="news">
-          <h4 class="mt-4">What are the lastest news?</h4>
-          <h5 class="mt-5b">2019-12-29 Hardware upgrade and fee reduction</h5>
-          <p>Straightpool hardware was just beefed up to twice the minimum spec of IOHK for even smoother operation going forward. At the same time fees were recalculated and reduced to 4% to give back even more rewards to all delegators.</p>
-        
-          <h5 class="mt-5b">2019-12-23 Pooltool Blockheight Tip</h5>
-          <p>Straightpool now reports current blockheight to <a href="https://pooltool.io/">Pooltool</a>, here you can always track that Straightpool is in sync and performing well.</p>
-          </a>
+          STR8 pool highly appreciates anyone already delegating to us or planning to do so. We will do our best to get you the rewards you deserve for being an early adopter of Cardano!
+          It is risk free to delegate your stake, consider delegating to STR8 today to earn rewards.
 
           <h4 class="mt-4">Who operates this pool?</h4>
           <p>I am an IT professional with computer science background, with many years in the IT business.</p>
@@ -65,10 +78,10 @@
           <h4 class="mt-4">What is the setup of your pool?</h4>
           <p>The pool is run off a reliable, redundant virtual private server located in Europe / crypto-friendly Germany with an SLA of 99.95%, with hardware spec double the stable minimum hardware requirements specified by IOHK ensuring smooth operation.</p> 
           <p>The pool is running on Ubuntu 18.04.3 LTS with 2 cores, 8 GB RAM, 80 GB HDD and 100 Mbps internet with no cap.</p>
-          <p>I do not want to bore you with real-time monitoring data of my pool, you can just expect that the pool works for you 24/7. Of course within the testnet the pool can only run as stable as the software stability allows, but I will do my best and moving forward code stability will improve for sure.</p> 
+          <p>I do not want to bore you with elaborate real-time monitoring data of my pool, you can just expect that the pool works for you 24/7. Of course within the testnet the pool can only run as stable as the software stability allows, but I will do my best and moving forward code stability will improve for sure.</p> 
     
           <h4 class="mt-4">What are your plans for the future of your pool?</h4>
-          <p>I am running this pool because I believe in Cardano's future and want to be a part of it. For this reason, I plan to run this pool indefinitely. I will try my best to keep this website up-to-date. Additionally, I am available on Telegram.</p>
+          <p>I am running this pool because I believe in Cardano's future and want to be a part of it. For this reason, I plan to run this pool indefinitely. I will try my best to keep the pool performing the best it can. 
 
           <p>I am currently very active in the <a href="https://t.me/CardanoStakePoolWorkgroup">Cardano Shelley Testnet & StakePool Best Practice Workgroup Telegram group</a> trying to help grow the community and implement all best practices for this pool and develop new best practices along the way.</p>
 
@@ -79,7 +92,7 @@
           <p>I will not suddenly raise my fees like what other pools starting with unsustainable fee structures will eventually do. As a delegator I want to give you peace of mind delegating to my pool all the way from testnet on to mainnet.</p>
 
           <h4 class="mt-4">Where do I get updates on this pool?</h4>
-          <p>Updates will be posted in the section <a href="#news">What are the lastest news?</a> on <a href="https://twitter.com/Straightpool4">Twitter</a> and in the <a href="https://t.me/str8pool">Straightpool Telegram group</a>.</p>
+          <p>Updates are posted on <a href="https://twitter.com/Straightpool4">Twitter</a> and in the <a href="https://t.me/str8pool">Straightpool Telegram group</a>.</p>
           <p>Currently, there are no plans to setup a mailing list for delegators as it is plausible Shelley mainnet will have some form of wallet messaging in the official wallets from stakepool operator to stakepool delegators. We have enough email spam already, I would like to minimize any further spam by not contributing to collect yet another mailing list prone to abuse.</p>
 
           <h4 class="mt-4">What is the name origin of this pool?</h4>
@@ -96,7 +109,7 @@
             <li><a href="https://explorer.incentivized-testnet.iohkdev.io/">IOHK Dev Shelley explorer</a></li>
           </ul>
 
-          <p>This document was last updated on January 6th, 2020</p>        
+          <p>This document was last updated on February 8th, 2020</p>        
           <p class="p-2"></p>
         </div>
       </div>
@@ -110,6 +123,31 @@
   </div>
 
 </footer>
+
+<script>
+    var mypoolid = "3a192bc7285d7ddfd77c0b854b4008bbf4c5fe53d1ad42770f6ffdf9b3d4c7d6"
+    let LoadData = function() {
+        const start = Date.now()
+        $.getJSON( "https://pooltool.s3-us-west-2.amazonaws.com/8e4d2a3/pools/"+mypoolid+"/livestats.json?now="+String(start), function( data ) {
+            var formattedstake = numeral(data['livestake']/1000000).format('0.00 a');
+
+            $("#ptstake").html(formattedstake)
+            $("#pteblocks").html(data['epochblocks'])
+        })
+
+        $.getJSON( "https://pooltool.s3-us-west-2.amazonaws.com/stats/stats.json?now="+String(start), function( data ) {
+            var formattedheight = numeral(data['majoritymax']).format('0,');
+            $("#ptepoch").html(data['currentepoch'])
+            $("#ptslot").html(data['currentslot'])
+            $("#ptheight").html(formattedheight)
+        })
+    }
+
+    $(document).ready(function() {
+        LoadData()
+        setInterval(LoadData, 60000); // this will update every 30 seconds
+    })
+</script>
 
   </body>
 </html>
