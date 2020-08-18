@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <h1 class="mt-4">Straight Pool</h1>
-          <p class="pool-links">Ticker: STR8 | Minimale feste Gebühr | 4% variable Gebühr | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io Profil <i class="fa fa-external-link " ></i></a></p>
+          <p class="pool-links">Ticker: STR8 | Umgangene feste Gebühr | 4% effektive variable Gebühr | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io Profil <i class="fa fa-external-link " ></i></a></p>
           <img src="./SP-Logo.svg" width="250px" />
           <p class="font-italic">"Schaue nur zurück, um zu sehen, wie weit du gekommen bist."</p>
         </div>
@@ -92,9 +92,19 @@
 
           <h4 class="mt-4">Warum sollte ich an diesen Pool delegieren?</h4>
           <p>Ich hoffe, dass mein Pool für Dich als Delegator sehr interessant ist. Ich habe es mir auf die Fahne geschrieben, diesen Pool ohne Zeitbegrenzung mit angemessenen, aber niedrigen Gebühren zu betreiben. Ich bin ein IT-Experte, sodass Du sicher sein kannst, dass mein Pool immer alle Best Practices umgesetzt hat.</p> 
-          <p>Ich habe entscheiden, primär auf der Gebühr aufzubauen, nicht auf den Poolkosten, um die Infrastruktur zu betreiben. Es werden also nur die minimal erforderlichen festen Kosten in diesem Pool erhoben. Mein Grund ist die Solidarität mit Dir, meinem hochgeschätzten Delegator. Indem wir uns primär auf die Gebühr verlassen, teilen wir das Risiko. Ich glaube an Cardano und wir stecken hier gemeinsam drin. Wenn Dein Stake gut läuft, laufen die Poolrewards gut. Wir teilen die guten Tage, wir teilen die schlechten Tage.</p>
-          <p>Die Pool-Gebühr beträgt lediglich 4% Deines Rewards, Du erhältst  immer noch 96% des Rewards. Bitte dabei beachten, dass wir hier über den Reward reden und nicht um den gesamten Stakeeinsatz.</p>
-          <p>Ich werde nicht plötzlich meine Gebühren erhöhen, wie es andere Pools, die mit nicht nachhaltigen Gebührenstrukturen beginnen, letztendlich tun müssen. Als Delegator möchte ich Dir die Gewissheit geben sicher an meinen Pool delegieren zu können.</p>
+          <p>Die Pool-Gebühr beträgt effektiv lediglich 4% Deines Rewards, Du erhältst 96% deiner Rewards. Bitte dabei beachten, dass wir hier über den Reward reden und nicht um den gesamten Stakeeinsatz. STR8 wendet zur Umgeheung der fixen Pflichtgebühr von 340 ADA pro Epoche eine dynamische variable Gebühr an. Bitte dabei beachten, dass wir hier über den Reward reden und nicht um den gesamten Stakeeinsatz.</p>
+          <p>Ich werde nicht plötzlich meine variablen Gebühren über 4% erhöhen, wie es andere Pools, die mit nicht nachhaltigen Gebührenstrukturen beginnen, letztendlich tun müssen. Als Delegator möchte ich Dir die Gewissheit geben sicher an meinen Pool delegieren zu können.</p>
+
+
+          <h4 class="mt-4">Was ist mit der "effektiven" variablen Gebühr von 4% gemeint?</h4>
+          <p>Ich bin nicht damit einverstanden, eine feste Gebühr von 340 ADA zu erheben, unabhängig von der Anzahl der Blöcke, die der STR8-Pool produziert. Mein Grund ist die Solidarität mit Dir, meinem hochgeschätzten Delegator. Indem wir uns nur auf die variable Gebühr verlassen, teilen wir das Risiko. Ich glaube an Cardano und wir stecken hier gemeinsam drin. Wenn Dein Stake gut läuft, laufen die Poolrewards gut. Wir teilen die guten Tage, wir teilen die schlechten Tage. Um einen nachhaltigen Pool zu betreiben, benötigt STR8 lediglich 4,0% als effektive variable Gebühr.</p>
+          <p>
+          Wir beginnen mit einer variablen Gebühr von 0% und der obligatorischen festen Gebühr von 340 ADA pro Epoche (bei mindestens einem produzierten Block).
+          Jede Epoche berechnet STR8 die effektive Gebühr, die durch die feste Gebühr von 340 ADA pro Epoche erzielt wird, und hält die anpassbare variable Gebühr bei 0%, solange die effektive Gebühr die minimale variable Gebühr von 4,0% erfüllt.
+          </p>
+          <p>
+          Jedes Mal, wenn die effektive variable Gebühr für 3 aufeinanderfolgende Epochen um mindestens 0,5 Punkte unter 4,0% fällt, wird die variable Poolgebühr um mindestens 0,5 Punkte auf maximal 4,0% erhöht. Die variable Gebühr wird zu keinem Zeitpunkt nach einer Erhöhung wieder gesenkt. Wenn der STR8-Pool nahezu gesättigt ist, spielt die feste Gebühr von 340 ADA eine untergeordnete Rolle, sodass die variable Gebühr sehr nahe bei 4,0% liegen wird. Die variable Gebühr beträgt genau dann exakt 4,0%, wenn die feste Gebühr nicht mehr obligatorisch ist und STR8 die feste Gebühr auf 0 reduzieren kann.          
+          </p>
 
           <h4 class="mt-4">Wo erhalte ich Updates zu diesem Pool?</h4>
           <p>Updates poste ich in <a href="https://twitter.com/Straightpool4">Twitter</a> und in der <a href="https://t.me/str8pool">Straightpool Telegram Gruppe</a>.</p>
@@ -113,7 +123,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org  Explorer  (Englisch)</a></li>
           </ul>
 
-          <p>Dieses Dokument wurde zuletzt am 30. Juli 2020 bearbeitet.</p>        
+          <p>Dieses Dokument wurde zuletzt am 18. August 2020 bearbeitet.</p>        
           <p class="p-2"></p>
         </div>
       </div>

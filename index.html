@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <h1 class="mt-4">Straight Pool</h1>
-          <p class="pool-links">Ticker: STR8 | minimal fixed fee | 4% variable fee | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io profile <i class="fa fa-external-link " ></i></a></p>
+          <p class="pool-links">Ticker: STR8 |  circumvented fixed fee | 4% effective variable fee | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io profile <i class="fa fa-external-link " ></i></a></p>
           <img src="./SP-Logo.svg" width="250px" />
           <p class="font-italic">"The only time you should ever look back, is to see how far you've come."</p>
         </div>
@@ -92,9 +92,19 @@
 
           <h4 class="mt-4">Why should I delegate to your pool?</h4>
           <p>My hope is that my pool has high desirability for you as a delegator. I am committed to run this pool indefinitely with reasonable but low fees. I am an IT professional so you can be assured I always have all best practices in place.</p> 
-          <p>I decided to use only the required minim fixed fee. My reason is solidarity with you, my highly appreciated delegator. By relying mostly on profit margin, we share the risk. I believe in Cardano and we are in this together. If your stake is doing well, the pool reward is going well. We share the good days, we share the bad days.</p>
-          <p>The pool profit margin is merely 4% of your reward, you keep 96% of your reward. Please note we are talking about reward, not your staking amount.</p>
-          <p>I will not suddenly raise my fees like what other pools starting with unsustainable fee structures will eventually do. As a delegator I want to give you peace of mind delegating to my pool.</p>
+          <p>The pool profit margin is effectively only 4% of your reward, you keep 96% of your reward. Please note we are talking about reward, not your staking amount. STR8 applies a dynamic variable fee to circumvent the fixed mandatory fee of 340 ADA per epoch.
+          </p>
+          <p>I will not suddenly raise my variable fees above 4% like what other pools starting with unsustainable fee structures will eventually do. As a delegator I want to give you peace of mind delegating to my pool.</p>
+
+          <h4 class="mt-4">What do you mean by an "effective" variable fee of 4%?</h4>
+          <p>I do not agree taking a fixed fee of 340 ADA independent of the number of blocks STR8 pool produces. My reason is solidarity with you, my highly appreciated delegator. By relying only on profit margin, we share the risk. I believe in Cardano and we are in this together. STR8 pool shares the good and bad days with its delegators by relying solely on the variable fee. To run a sustainable pool, STR8 requires merely 4.0% of effective variable fee.</p>
+          <p>
+          Starting out we start with a variable fee of 0% and the mandatory fixed fee of 340 ADA per epoch (in case of at least one produced block). 
+          Each epoch STR8 will calculate the effective fee gained by the fixed fee of 340 ADA per epoch and keep the customizable variable fee at 0% as long as the effective fee meets the minimum of 4.0% effective variable fee.
+          </p>
+          <p>
+           Each time the effective variable fee drops for 3 consecutive epochs at least 0.5 points below 4.0%, the variable pool fee will be increased by at least 0.5 points to a maximum of 4.0%. At no point the variable fee is decreased again after it has been increased. When STR8 pool is near saturation the fixed fee of 340 ADA will play a miniscule role, so the variable fee will then be very close to 4.0%. The variable fee will be 4.0% exactly when the fixed fee is no longer mandatory and STR8 can reduce the fixed fee to 0.
+          </p>
 
           <h4 class="mt-4">Where do I get updates on this pool?</h4>
           <p>Updates are posted on <a href="https://twitter.com/Straightpool4">Twitter</a> and in the <a href="https://t.me/str8pool">Straightpool Telegram group</a>.</p>
@@ -113,7 +123,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org explorer</a></li>
           </ul>
 
-          <p>This document was last updated on July 30th, 2020</p>        
+          <p>This document was last updated on August 18th, 2020</p>        
           <p class="p-2"></p>
         </div>
       </div>
