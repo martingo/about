@@ -2,5 +2,17 @@
   "itn": {
     "owner": "ed25519_pk12rdfk8a29tdnmu85nh7g39hj0spsr70nyg5vzvuxat0d6qpjaqhs480msg",
     "witness": "ed25519_sig12c749nrs9wwzg842gntchxv8tnzjgyxu7jzcajrlwgsk5tljae3d0t3gxsuulnly4au7vt8yq3f8np73en284ps9pmaqmk2r2xcdspcn9m4gj"
-  }
+  },
+   "info": {
+        "url_png_icon_64x64": "https://github.com/Straightpool/about/blob/master/favicon.ico",
+        "url_png_logo": "https://github.com/Straightpool/about/blob/master/SP-Logo.png",
+        "location": "Germany",
+        "social": {
+            "twitter_handle": "Straightpool4",
+            "telegram_handle": "ChrisSTR8",
+            "github_handle": "Straightpool"
+  },
+      "my-pool-ids": {
+        "0": "000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00"
+    }
 }
