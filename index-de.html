@@ -12,6 +12,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <link href="./css/flag-icon.css" rel="stylesheet">
+    <link  href="./css/table.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   </head>
@@ -94,19 +95,103 @@
           <p>Ich hoffe, dass mein Pool für Dich als Delegator sehr interessant ist. Ich habe es mir auf die Fahne geschrieben, diesen Pool ohne Zeitbegrenzung mit angemessenen, aber niedrigen Gebühren zu betreiben. Ich bin ein IT-Experte, sodass Du sicher sein kannst, dass mein Pool immer alle Best Practices umgesetzt hat.</p> 
           <p>Die Pool-Gebühr beträgt effektiv lediglich 4% Deines Rewards, Du erhältst 96% deiner Rewards. Bitte dabei beachten, dass wir hier über den Reward reden und nicht um den gesamten Stakeeinsatz. STR8 wendet zur Umgeheung der fixen Pflichtgebühr von 340 ADA pro Epoche eine dynamische variable Gebühr an.</p>
           <p>Ich werde nicht plötzlich meine variablen Gebühren über 4% erhöhen, wie es andere Pools, die mit nicht nachhaltigen Gebührenstrukturen beginnen, letztendlich tun müssen. Als Delegator möchte ich Dir die Gewissheit geben sicher an meinen Pool delegieren zu können.</p>
-
+          <p>Ich setze mich für die Dezentralisierung ein: Ich verpflichte mich, immer nur einen einzigen Cardano-Stakepool, STR8, zu besitzen oder zu vertreten.</p>
 
           <h4 class="mt-4">Was ist mit der "effektiven" variablen Gebühr von 4% gemeint?</h4>
-          <p>Ich bin nicht damit einverstanden, eine feste Gebühr von 340 ADA zu erheben, unabhängig von der Anzahl der Blöcke, die der STR8-Pool produziert. Mein Grund ist die Solidarität mit Dir, meinem hochgeschätzten Delegator. Indem wir uns nur auf die variable Gebühr verlassen, teilen wir das Risiko. Ich glaube an Cardano und wir stecken hier gemeinsam drin. Wenn Dein Stake gut läuft, laufen die Poolrewards gut. Wir teilen die guten Tage, wir teilen die schlechten Tage. Um einen nachhaltigen Pool zu betreiben, benötigt STR8 lediglich 4,0% als effektive variable Gebühr.</p>
+          <p>Ich bin nicht damit einverstanden, eine feste Gebühr von 340 ADA zu erheben, unabhängig von der Anzahl der Blöcke, die der STR8-Pool produziert. Mein Grund ist die Solidarität mit Dir, meinem hochgeschätzten Delegator. Indem wir uns nur auf die variable Gebühr verlassen, teilen wir das Risiko. Ich glaube an Cardano und wir stecken hier gemeinsam drin. Wenn Dein Stake gut läuft, laufen die Poolrewards gut. Wir teilen die guten Tage, wir teilen die schlechten Tage. Um einen einzelnen, nachhaltigen Pool zu betreiben, benötigt STR8 lediglich 4,0% als effektive variable Gebühr.</p>
           <p>
-          Wir beginnen mit einer variablen Gebühr von 0% und der obligatorischen festen Gebühr von 340 ADA pro Epoche (bei mindestens einem produzierten Block).
-          Jede Epoche berechnet STR8 die effektive Gebühr, die durch die feste Gebühr von 340 ADA pro Epoche erzielt wird, und hält die anpassbare variable Gebühr bei 0%, solange die effektive Gebühr die minimale variable Gebühr von 4,0% erfüllt.
+          Wir beginnen mit einer variablen Gebühr von 0% und der obligatorischen festen Gebühr von 340 ADA pro Epoche (bei mindestens einem produzierten Block). Die folgende Tabelle gibt einen transparenten Überblick über die Schritte der dynamischen Gebührenanpassung auf Grundlage des gesamten Stakes:
+          </p>
+       <table>
+  <thead>
+    <tr>
+      <th>Bemerkung</th>
+      <th>ADA staked [₳]</th>
+      <th>Variable Gebühr [%]</th>
+      <th>Feste Gebühr [₳]</th>
+      <th>Effektive Gebühr [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Bemerkung">erste Änderung bei</td>
+      <td data-label="ADA staked [₳]">15,000,000</td>
+      <td data-label="Variable Gebühr [%]">0.75%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">3.93%</td>
+    </tr>
+    <tr>
+      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="ADA staked [₳]">20,000,000</td>
+      <td data-label="Variable Gebühr [%]">1.50%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">3.89%</td>
+    </tr>
+    <tr>
+      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="ADA staked [₳]">25,000,000</td>
+      <td data-label="Variable Gebühr [%]">2.00%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">3.91%</td>
+    </tr>
+     <tr>
+      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="ADA staked [₳]">30,000,000</td>
+      <td data-label="Variable Gebühr [%]">2.50%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">4.09%</td>
+    </tr>
+    <tr>
+      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="ADA staked [₳]">35,000,000</td>
+      <td data-label="Variable Gebühr [%]">2.75%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">4.11%</td>
+    </tr>
+    <tr>
+      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="ADA staked [₳]">45,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">4.06%</td>
+    </tr>
+    <tr>
+      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="ADA staked [₳]">55,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.25%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">4.12%</td>
+    </tr>   
+    <tr>
+      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="ADA staked [₳]">75,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.50%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">4.14%</td>
+    </tr>  
+    <tr>
+      <td data-label="Bemerkung">Finale Änderung</td>
+      <td data-label="ADA staked [₳]">100,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.75%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">4.23%</td>
+    </tr> 
+    <tr>
+      <td data-label="Bemerkung">Nahe der Saturierungsgrenze</td>
+      <td data-label="ADA staked [₳]">200,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.75%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">3.99%</td>
+    </tr>   
+  </tbody>
+        </table>
+
+          <br>
+          <p>
+          (Wenn Du die Formeln hinter dieser Tabelle überprüfen möchtest, kannst du gerne <a href="STR8-PoolGebühr.ods">hier</a> das vollständige Tabellenblatt zur Berechnung einsehen.)
           </p>
           <p>
-          Jedes Mal, wenn die effektive variable Gebühr für 3 aufeinanderfolgende Epochen um mindestens 0,5 Punkte unter 4,0% fällt, wird die variable Poolgebühr um mindestens 0,5 Punkte auf maximal 4,0% erhöht. Die variable Gebühr wird zu keinem Zeitpunkt nach einer Erhöhung wieder gesenkt. Wenn der STR8-Pool nahezu gesättigt ist, spielt die feste Gebühr von 340 ADA eine untergeordnete Rolle, sodass die variable Gebühr sehr nahe bei 4,0% liegen wird. Die variable Gebühr beträgt genau dann exakt 4,0%, wenn die feste Gebühr nicht mehr obligatorisch ist und STR8 die feste Gebühr auf 0 reduzieren kann.          
-          </p>
-          <p>
-          STR8 Pools niedrige effektive Gebühr von 4% auf den Rewards entspricht tatsächlich 0,2% Kosten für Delegierte pro Jahr, wenn der Brutto ROS 5% beträgt. Bitte nicht vergessen, dass Crypto 2-10% pro Tag schwanken kann, daher glaube ich, dass STR8 sehr wettbewerbsfähige Gebühren hat.
+          STR8 Pools niedrige effektive Gebühr von 4% auf den Rewards entspricht tatsächlich 0,2% Kosten für Delegierte pro Jahr, wenn der Brutto ROS 5,2% beträgt. Bitte nicht vergessen, dass Crypto 2-10% pro Tag schwanken kann, daher glaube ich, dass STR8 sehr wettbewerbsfähige Gebühren hat.
           </p>
 
           <h4 class="mt-4">Wo erhalte ich Updates zu diesem Pool?</h4>
@@ -127,7 +212,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org  Explorer  (Englisch)</a></li>
           </ul>
 
-          <p>Dieses Dokument wurde zuletzt am 6. September 2020 bearbeitet.</p>        
+          <p>Dieses Dokument wurde zuletzt am 9. September 2020 bearbeitet.</p>        
           <p class="p-2"></p>
         </div>
       </div>
