@@ -83,7 +83,7 @@
           <p>I see a lot of potential in Cardano due to its' strong vision and methodical process, so I am very happy to provide the service of running a reliable stakepool for the community fostering network growth & strength.</p>
 
           <h4 class="mt-4">What is the setup of your pool?</h4>
-          <p>The pool is run off four reliable, redundant virtual private servers, one block producer, one block producer backup and two relays distributed across different data centers in Europe / Germany and Asia / Singapore. With this redundant setup, STR8 pool never misses a block even during maintenance windows.</p>
+          <p>The pool is run off three reliable, redundant virtual private servers, one block producer and two relays distributed across different data centers in Europe / Germany and Asia / Singapore. With this redundant setup, STR8 pool never misses a block even during maintenance windows.</p>
           <p>All nodes run on a modern secure Server OS with ample hardware resources and strong peering with easy scaling options to meet rising demands.</p>
           <p>I do not want to bore you with elaborate real-time monitoring data of my pool, you can just expect that the pool works for you 24/7.</p> 
     
@@ -102,27 +102,31 @@
           <h4 class="mt-4">What do you mean by an "effective" variable fee of 4%?</h4>
           <p>I do not agree taking a fixed fee of 340 ADA independent of the number of blocks STR8 pool produces. My reason is solidarity with you, my highly appreciated delegator. By relying only on profit margin, we share the risk. I believe in Cardano and we are in this together. STR8 pool shares the good and bad days with its delegators by relying solely on the variable fee. To run a single, sustainable pool, STR8 requires merely 4.0% of effective variable fee.</p>
           <p>
-          Starting out we start with a variable fee of 0% and the mandatory fixed fee of 340 ADA per epoch (in case of at least one produced block). The following table transparently outlines the steps of dynamic fee adjustment based on total stake:
+          Starting out we start with a variable fee of 0% and the mandatory fixed fee of 340 ADA per epoch (in case of at least one produced block). The following table transparently outlines the steps of dynamic fee adjustment based on total stake. All rewards by epoch, delegator sample stake assumption 100k ADA:
           </p>
 
 
-       <table>
+  <table>
   <thead>
     <tr>
       <th>Remark</th>
       <th>ADA staked [₳]</th>
-      <th>Variable Fee [%]</th>
-      <th>Fixed Fee [₳]</th>
-      <th>Effective Fee [%]</th>
+      <th>Variable fee [%]</th>
+      <th>Fixed fee [₳]</th>
+      <th>Effective fee [%]</th>
+      <th>Effective cost [%]</th>
+      <th>Delegator rewards [₳]</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td data-label="Remark">first change at</td>
       <td data-label="ADA staked [₳]">15,000,000</td>
-      <td data-label="Variable Fee [%]">0.75%</td>
-      <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">3.93%</td>
+      <td data-label="Variable fee [%]">0.75%</td>
+      <td data-label="Fixed fee [₳]">340</td>
+      <td data-label="Effective fee [%]">3.93%</td>
+      <td data-label="Effective cost [%]">0.20%</td>
+      <td data-label="Delegator rewards [₳]">68</td>
     </tr>
     <tr>
       <td data-label="Remark">change at</td>
@@ -130,6 +134,8 @@
       <td data-label="Variable Fee [%]">1.50%</td>
       <td data-label="Fixed Fee [₳]">340</td>
       <td data-label="Effective Fee [%]">3.89%</td>
+      <td data-label="Effective cost [%]">0.20%</td>
+      <td data-label="Delegator rewards [₳]">68</td>
     </tr>
     <tr>
       <td data-label="Remark">change at</td>
@@ -137,6 +143,8 @@
       <td data-label="Variable Fee [%]">2.00%</td>
       <td data-label="Fixed Fee [₳]">340</td>
       <td data-label="Effective Fee [%]">3.91%</td>
+      <td data-label="Effective cost [%]">0.20%</td>
+      <td data-label="Delegator rewards [₳]">68</td>
     </tr>
      <tr>
       <td data-label="Remark">change at</td>
@@ -144,6 +152,8 @@
       <td data-label="Variable Fee [%]">2.50%</td>
       <td data-label="Fixed Fee [₳]">340</td>
       <td data-label="Effective Fee [%]">4.09%</td>
+      <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Delegator rewards [₳]">68</td>
     </tr>
     <tr>
       <td data-label="Remark">change at</td>
@@ -151,6 +161,8 @@
       <td data-label="Variable Fee [%]">2.75%</td>
       <td data-label="Fixed Fee [₳]">340</td>
       <td data-label="Effective Fee [%]">4.11%</td>
+      <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Delegator rewards [₳]">68</td>    
     </tr>
     <tr>
       <td data-label="Remark">change at</td>
@@ -158,34 +170,26 @@
       <td data-label="Variable Fee [%]">3.00%</td>
       <td data-label="Fixed Fee [₳]">340</td>
       <td data-label="Effective Fee [%]">4.06%</td>
+      <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Delegator rewards [₳]">68</td>      
     </tr>
     <tr>
-      <td data-label="Remark">change at</td>
+      <td data-label="Remark">final change</td>
       <td data-label="ADA staked [₳]">55,000,000</td>
       <td data-label="Variable Fee [%]">3.25%</td>
       <td data-label="Fixed Fee [₳]">340</td>
       <td data-label="Effective Fee [%]">4.12%</td>
+      <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Delegator rewards [₳]">68</td>     
     </tr>   
     <tr>
-      <td data-label="Remark">change at</td>
-      <td data-label="ADA staked [₳]">75,000,000</td>
-      <td data-label="Variable Fee [%]">3.50%</td>
-      <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">4.14%</td>
-    </tr>  
-    <tr>
-      <td data-label="Remark">final change</td>
-      <td data-label="ADA staked [₳]">100,000,000</td>
-      <td data-label="Variable Fee [%]">3.75%</td>
-      <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">4.23%</td>
-    </tr> 
-    <tr>
       <td data-label="Remark">close to saturation</td>
-      <td data-label="ADA staked [₳]">200,000,000</td>
-      <td data-label="Variable Fee [%]">3.75%</td>
+      <td data-label="ADA staked [₳]">63,810,000</td>
+      <td data-label="Variable Fee [%]">3.25%</td>
       <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">3.99%</td>
+      <td data-label="Effective Fee [%]">4.00%</td>
+     <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Delegator rewards [₳]">68</td>     
     </tr>   
   </tbody>
         </table>
@@ -215,7 +219,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org explorer</a></li>
           </ul>
 
-          <p>This document was last updated on September 9th, 2020</p>        
+          <p>This document was last updated on November 21st, 2020</p>        
           <p class="p-2"></p>
         </div>
       </div>

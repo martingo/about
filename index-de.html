@@ -83,7 +83,7 @@
           <p>Ich sehe in Cardano aufgrund der starken Vision und des methodischen Vorgehens viel Potenzial. Daher freue ich mich sehr, einen zuverlässigen Stakepool für die Community betreiben zu können, der das Wachstum und die Stärke des Netzwerks fördert.</p>
 
           <h4 class="mt-4">Welche Konfiguration hat der Pool?</h4>
-          <p>Der Pool wird auf vier zuverlässigen, redundanten virtuellen privaten Servern, einem Block Producer, einem Backup Block Producer und zwei Relays betrieben. Die Server sind auf verschiedene Datencenter verteilt in Europa / Deutschland und Asien / Singapur. Mit diesem redundanten Aufbau verpasst der STR8-Pool selbst während Wartungsfenstern keine Blöcke.</p> 
+          <p>Der Pool wird auf drei zuverlässigen, redundanten virtuellen privaten Servern, einem Block Producer und zwei Relays betrieben. Die Server sind auf verschiedene Datencenter verteilt in Europa / Deutschland und Asien / Singapur. Mit diesem redundanten Aufbau verpasst der STR8-Pool selbst während Wartungsfenstern keine Blöcke.</p> 
           <p>Alle Knoten laufen auf einem modernen, sicheren Serverbetriebssystem mit ausreichenden Hardwareressourcen und starken Peering-Optionen und einfachen Skalierungsoptionen, um steigenden Anforderungen gerecht zu werden</p>
           <p>Ich möchte Dich nicht mit detaillierten Echtzeitüberwachungsdaten meines Pools langweilen. Du kannst erwarten, dass der Pool rund um die Uhr  funktioniert. </p> 
     
@@ -101,7 +101,7 @@
           <h4 class="mt-4">Was ist mit der "effektiven" variablen Gebühr von 4% gemeint?</h4>
           <p>Ich bin nicht damit einverstanden, eine feste Gebühr von 340 ADA zu erheben, unabhängig von der Anzahl der Blöcke, die der STR8-Pool produziert. Mein Grund ist die Solidarität mit Dir, meinem hochgeschätzten Delegator. Indem wir uns nur auf die variable Gebühr verlassen, teilen wir das Risiko. Ich glaube an Cardano und wir stecken hier gemeinsam drin. Wenn Dein Stake gut läuft, laufen die Poolrewards gut. Wir teilen die guten Tage, wir teilen die schlechten Tage. Um einen einzelnen, nachhaltigen Pool zu betreiben, benötigt STR8 lediglich 4,0% als effektive variable Gebühr.</p>
           <p>
-          Wir beginnen mit einer variablen Gebühr von 0% und der obligatorischen festen Gebühr von 340 ADA pro Epoche (bei mindestens einem produzierten Block). Die folgende Tabelle gibt einen transparenten Überblick über die Schritte der dynamischen Gebührenanpassung auf Grundlage des gesamten Stakes:
+          Wir beginnen mit einer variablen Gebühr von 0% und der obligatorischen festen Gebühr von 340 ADA pro Epoche (bei mindestens einem produzierten Block). Die folgende Tabelle gibt einen transparenten Überblick über die Schritte der dynamischen Gebührenanpassung auf Grundlage des gesamten Stakes. All Rewards sind per Epoche angegeben, als Beispiel Delegation sind 100k ADA angenommen.
           </p>
        <table>
   <thead>
@@ -111,6 +111,8 @@
       <th>Variable Gebühr [%]</th>
       <th>Feste Gebühr [₳]</th>
       <th>Effektive Gebühr [%]</th>
+      <th>Effektive Kosten [%]</th>
+      <th>Delegator Rewards [₳]</th>
     </tr>
   </thead>
   <tbody>
@@ -120,6 +122,8 @@
       <td data-label="Variable Gebühr [%]">0.75%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">3.93%</td>
+      <td data-label="Effective Kosten [%]">0.20%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>    
     </tr>
     <tr>
       <td data-label="Bemerkung">Änderung bei</td>
@@ -127,6 +131,8 @@
       <td data-label="Variable Gebühr [%]">1.50%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">3.89%</td>
+      <td data-label="Effective Kosten [%]">0.20%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>    
     </tr>
     <tr>
       <td data-label="Bemerkung">Änderung bei</td>
@@ -134,6 +140,8 @@
       <td data-label="Variable Gebühr [%]">2.00%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">3.91%</td>
+      <td data-label="Effective Kosten [%]">0.20%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>    
     </tr>
      <tr>
       <td data-label="Bemerkung">Änderung bei</td>
@@ -141,6 +149,8 @@
       <td data-label="Variable Gebühr [%]">2.50%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">4.09%</td>
+      <td data-label="Effective Kosten [%]">0.21%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>    
     </tr>
     <tr>
       <td data-label="Bemerkung">Änderung bei</td>
@@ -148,6 +158,8 @@
       <td data-label="Variable Gebühr [%]">2.75%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">4.11%</td>
+      <td data-label="Effective Kosten [%]">0.21%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>     
     </tr>
     <tr>
       <td data-label="Bemerkung">Änderung bei</td>
@@ -155,34 +167,26 @@
       <td data-label="Variable Gebühr [%]">3.00%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">4.06%</td>
+      <td data-label="Effective Kosten [%]">0.21%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>  
     </tr>
     <tr>
-      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="Bemerkung">Finale Änderung</td>
       <td data-label="ADA staked [₳]">55,000,000</td>
       <td data-label="Variable Gebühr [%]">3.25%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">4.12%</td>
+      <td data-label="Effective Kosten [%]">0.21%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>  
     </tr>   
     <tr>
-      <td data-label="Bemerkung">Änderung bei</td>
-      <td data-label="ADA staked [₳]">75,000,000</td>
-      <td data-label="Variable Gebühr [%]">3.50%</td>
-      <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">4.14%</td>
-    </tr>  
-    <tr>
-      <td data-label="Bemerkung">Finale Änderung</td>
-      <td data-label="ADA staked [₳]">100,000,000</td>
-      <td data-label="Variable Gebühr [%]">3.75%</td>
-      <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">4.23%</td>
-    </tr> 
-    <tr>
       <td data-label="Bemerkung">Nahe der Saturierungsgrenze</td>
-      <td data-label="ADA staked [₳]">200,000,000</td>
-      <td data-label="Variable Gebühr [%]">3.75%</td>
+      <td data-label="ADA staked [₳]">63,810,000</td>
+      <td data-label="Variable Gebühr [%]">3.25%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">3.99%</td>
+      <td data-label="Effektive Gebühr [%]">4.00%</td>
+      <td data-label="Effective Kosten [%]">0.21%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>  
     </tr>   
   </tbody>
         </table>
@@ -213,7 +217,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org  Explorer  (Englisch)</a></li>
           </ul>
 
-          <p>Dieses Dokument wurde zuletzt am 2. Oktober 2020 bearbeitet.</p>        
+          <p>Dieses Dokument wurde zuletzt am 21. November 2020 bearbeitet.</p>        
           <p class="p-2"></p>
         </div>
       </div>
