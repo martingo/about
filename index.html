@@ -31,7 +31,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <h1 class="mt-4">Straight Pool</h1>
-          <p class="pool-links">Ticker: STR8 | 4% effective fee | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io profile <i class="fa fa-external-link " ></i></a></p>
+          <p class="pool-links">Ticker: STR8 | Pool-ID: <span id="poolid">000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00</span> <input type="image" src="content_copy-black-18dp.svg" onclick="copyToClipboard('#poolid')" /> | 4% effective fee | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io profile <i class="fa fa-external-link " ></i></a></p>
           <img src="./SP-Logo.svg" width="250px" />
           <p class="font-italic">"The only time you should ever look back, is to see how far you've come."</p>
         </div>
@@ -224,7 +224,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org explorer</a></li>
           </ul>
 
-          <p>This document was last updated on December 7th, 2020</p>        
+          <p>This document was last updated on December 8th, 2020</p>        
           <p class="p-2"></p>
         </div>
       </div>
@@ -238,6 +238,16 @@
   </div>
 
 </footer>
+
+<script>
+  function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
 
 <!--
 <script>
