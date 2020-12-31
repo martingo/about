@@ -107,9 +107,13 @@
           <h4 class="mt-4">実効性のある」4％の料金とは</h4>
           <p>
           340 ADAの固定料金は、生成されたブロックの数を考慮しないと正しくありません。
-          私の理由は、私の高く評価されている代議員であるあなたとの連帯です。利益率のみに依存することで、リスクを共有します。私はカルダノを信じています。 STR8プールは、変動料金のみに依存することにより、代表者と良い日と悪い日を共有します。単一の持続可能なプールを運営するためには、STR8は4.0％の実効料金のみを必要とします。</p>
+          私の理由は、私の高く評価されている代議員であるあなたとの連帯です。利益率のみに依存することで、リスクを共有します。私はカルダノを信じています。 STR8プールは、変動料金のみに依存することにより、代表者と良い日と悪い日を共有します。単一の持続可能なプールを運営するためには、STR8は~4.0％の実効料金のみを必要とします。</p>
           <p>
-          最初は、0％の可変料金とエポックごとに340 ADAの必須の固定料金から始めます（少なくとも1つの生成されたブロックの場合）。以下の表は、総持分に基づく動的な手数料調整のステップを明確に示したもの賭け金。報酬は全てエポック別。 
+          340 ADAという強制的な固定手数料がある限り、STR8プールは3.00%の変動手数料を使用します。STR8プールは、ステークの合計が500万ADAを下回ると、再びブートストラップモードに入り、変動手数料を0.00%に減少させます。将来、固定手数料必須フラグが削除された場合、STR8プールは以下のようになります。
+          固定料金を0 ADAに引き下げ、変動料金を4.00%に引き上げる。
+          </p>
+          <p>
+           以下の表は、総ステイクに基づく報酬効果を透過的に示しています。報酬はすべてエポック別です。
           </p>
 
  <table>
@@ -125,77 +129,77 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td data-label="備考">初手</td>
-      <td data-label="ADA 賭け金 [₳]">15,000,000</td>
-      <td data-label="変動費 [%]">0.75%</td>
+      <tr>
+      <td data-label="備考">飽和に近い d = 1000</td>
+      <td data-label="ADA 賭け金 [₳]">32,000,000</td>
+      <td data-label="変動費 [%]">3.00%</td>
       <td data-label="固定料金 [₳]">340</td>
-      <td data-label="効果的な料金 [%]">3.93%</td>
-      <td data-label="効果的なコスト [%]">0.20%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td>      
+      <td data-label="効果的な料金 [%]">4.49%</td>
+      <td data-label="効果的なコスト [%]">0.23%</td>
+      <td data-label="代議士 褒賞 [₳]">68</td>
     </tr>
     <tr>
-      <td data-label="備考">かわる</td>
-      <td data-label="ADA 賭け金 [₳]">20,000,000</td>
-      <td data-label="変動費 [%]">1.50%</td>
-      <td data-label="固定料金 [₳]">340</td>
-      <td data-label="効果的な料金 [%]">3.89%</td>
-      <td data-label="効果的なコスト [%]">0.20%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td>        
-    </tr>
-    <tr>
-      <td data-label="備考">かわる</td>
-      <td data-label="ADA 賭け金 [₳]">25,000,000</td>
-      <td data-label="変動費 [%]">2.00%</td>
-      <td data-label="固定料金 [₳]">340</td>
-      <td data-label="効果的な料金 [%]">3.91%</td>
-      <td data-label="効果的なコスト [%]">0.20%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td>      
-    </tr>
-     <tr>
-      <td data-label="備考">かわる</td>
-      <td data-label="ADA 賭け金 [₳]">30,000,000</td>
-      <td data-label="変動費 [%]">2.50%</td>
-      <td data-label="固定料金 [₳]">340</td>
-      <td data-label="効果的な料金 [%]">4.09%</td>
-      <td data-label="効果的なコスト [%]">0.21%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td>      
-    </tr>
-    <tr>
-      <td data-label="備考">かわる</td>
+      <td data-label="備考"></td>
       <td data-label="ADA 賭け金 [₳]">35,000,000</td>
-      <td data-label="変動費 [%]">2.75%</td>
+      <td data-label="変動費 [%]">3.00%</td>
       <td data-label="固定料金 [₳]">340</td>
-      <td data-label="効果的な料金 [%]">4.11%</td>
-      <td data-label="効果的なコスト [%]">0.21%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td>  
+      <td data-label="効果的な料金 [%]">4.36%</td>
+      <td data-label="効果的なコスト [%]">0.23%</td>
+      <td data-label="代議士 褒賞 [₳]">68</td>    
     </tr>
     <tr>
-      <td data-label="備考">かわる</td>
+      <td data-label="備考"></td>
+      <td data-label="ADA 賭け金 [₳]">40,000,000</td>
+      <td data-label="変動費 [%]">3.00%</td>
+      <td data-label="固定料金 [₳]">340</td>
+      <td data-label="効果的な料金 [%]">4.19%</td>
+      <td data-label="効果的なコスト [%]">0.22%</td>
+      <td data-label="代議士 褒賞 [₳]">68</td>      
+    </tr>
+    <tr>
+      <td data-label="備考"></td>
       <td data-label="ADA 賭け金 [₳]">45,000,000</td>
       <td data-label="変動費 [%]">3.00%</td>
       <td data-label="固定料金 [₳]">340</td>
       <td data-label="効果的な料金 [%]">4.06%</td>
       <td data-label="効果的なコスト [%]">0.21%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td>  
+      <td data-label="代議士 褒賞 [₳]">68</td>      
     </tr>
     <tr>
-      <td data-label="備考">最終変更</td>
-      <td data-label="ADA 賭け金 [₳]">55,000,000</td>
-      <td data-label="変動費 [%]">3.25%</td>
+      <td data-label="備考"></td>
+      <td data-label="ADA 賭け金 [₳]">50,000,000</td>
+      <td data-label="変動費 [%]">3.00%</td>
       <td data-label="固定料金 [₳]">340</td>
-      <td data-label="効果的な料金 [%]">4.12%</td>
+      <td data-label="効果的な料金 [%]">3.95%</td>
       <td data-label="効果的なコスト [%]">0.21%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td>   
+      <td data-label="代議士 褒賞 [₳]">68</td>      
+    </tr>  
+    <tr>
+      <td data-label="備考"></td>
+      <td data-label="ADA 賭け金 [₳]">55,000,000</td>
+      <td data-label="変動費 [%]">3.00%</td>
+      <td data-label="固定料金 [₳]">340</td>
+      <td data-label="効果的な料金 [%]">3.87%</td>
+      <td data-label="効果的なコスト [%]">0.20%</td>
+      <td data-label="代議士 褒賞 [₳]">68</td>     
+    </tr>  
+    <tr>
+      <td data-label="備考"></td>
+      <td data-label="ADA 賭け金 [₳]">60,000,000</td>
+      <td data-label="変動費 [%]">3.00%</td>
+      <td data-label="固定料金 [₳]">340</td>
+      <td data-label="効果的な料金 [%]">3.80%</td>
+      <td data-label="効果的なコスト [%]">0.20%</td>
+      <td data-label="代議士 褒賞 [₳]">69</td>     
     </tr>   
     <tr>
-      <td data-label="備考">飽和に近い</td>
-      <td data-label="ADA 賭け金 [₳]">63,810,000</td>
-      <td data-label="変動費 [%]">3.25%</td>
+      <td data-label="備考">飽和に近い d = 500</td>
+      <td data-label="ADA 賭け金 [₳]">64,000,000</td>
+      <td data-label="変動費 [%]">3.00%</td>
       <td data-label="固定料金 [₳]">340</td>
-      <td data-label="効果的な料金 [%]">4.00%</td>
-      <td data-label="効果的なコスト [%]">0.21%</td>
-      <td data-label="代議士 褒賞 [₳]">68</td> 
+      <td data-label="効果的な料金 [%]">3.75%</td>
+      <td data-label="効果的なコスト [%]">0.19%</td>
+      <td data-label="代議士 褒賞 [₳]">69</td> 
     </tr>   
   </tbody>
         </table>
@@ -210,7 +214,7 @@
           (この表の背後にある数式を確認したい場合は、<a href="STR8-PoolFee.ods">こちら</a>の完全なスプレッドシートを参照してください 。  黄色のセルでは、平均報酬を更新するためにあなた自身のステークを入力することができます。)
           </p>
           <p>
-          予想される総ROSが5,2％であると仮定すると、STR8プールの効的なな4％変動料金を考慮すると、1年あたりの代表者のコストはわずか0.2％です。
+          予想される総ROSが5,2％であると仮定すると、STR8プールの効的なな~4％変動料金を考慮すると、1年あたりの代表者のコストはわずか0.2％です。
           クリプトは1日あたり2〜10％変動する可能性があるので、STR8は非常に競争力のある料金だと思います。
           </p>
 
@@ -227,12 +231,13 @@
             <li><a href="https://cardano.org/stake-pool-delegation/">ステークホルダープールへの委任に関する公式情報</a></li>
             <li><a href="https://iohk.io/en/blog/posts/2020/11/13/the-general-perspective-on-staking-in-cardano/">委任に関する公式見解  (英語)</a></li>
             <li><a href="https://cardano.org/calculator/?calculator=delegator/">報奨金計算機</a></li>
+             <li><a href="https://cardano-community.github.io/support-faq/#/rewards">コミュニティ報酬FAQ (英語)</a></li>
             <!--<li><a href="https://shelleyexplorer.cardano.org/ja/stake-pool/3a192bc7285d7ddfd77c0b854b4008bbf4c5fe53d1ad42770f6ffdf9b3d4c7d6">Shelley エクスプローラでこのプールを探索する</a></li>-->
             <li><a href="https://pooltool.io/">Pooltool  (英語)</a></li>
             <li><a href="https://explorer.cardano.org/ja">Cardano.org  エクスプ ローラー  (英語)</a></li>
           </ul>
 
-          <p>このドキュメントの最終更新日は2020年12月8日です</p>        
+          <p>このドキュメントの最終更新日は2020年12月31日です</p>        
           <p class="p-2"></p>
         </div>
       </div>

@@ -100,12 +100,14 @@
           <p>I champion decentralization: I commit to only ever own or represent a single Cardano stake pool, STR8.</p>
 
           <h4 class="mt-4">What do you mean by an "effective" fee of 4%?</h4>
-          <p>I do not agree taking a fixed fee of 340 ADA independent of the number of blocks STR8 pool produces. My reason is solidarity with you, my highly appreciated delegator. By relying only on profit margin, we share the risk. I believe in Cardano and we are in this together. STR8 pool shares the good and bad days with its delegators by relying solely on the variable fee. To run a single, sustainable pool, STR8 requires merely 4.0% of effective fee.</p>
+          <p>I do not agree taking a fixed fee of 340 ADA independent of the number of blocks STR8 pool produces. My reason is solidarity with you, my highly appreciated delegator. By relying only on profit margin, we share the risk. I believe in Cardano and we are in this together. STR8 pool shares the good and bad days with its delegators by relying solely on the variable fee. To run a single, sustainable pool, STR8 requires merely ~4.0% of effective fee.</p>
           <p>
-          Starting out we start with a variable fee of 0% and the mandatory fixed fee of 340 ADA per epoch (in case of at least one produced block). The following table transparently outlines the steps of dynamic fee adjustment based on total stake. All rewards are by epoch:
+          As long as there is a mandatory fixed fee of 340 ADA, STR8 pool uses a variable fee of 3.00%. Should the total stake ever drop below 5M ADA, STR8 pool will enter bootstrap mode again, reducing the variable fee to 0.00%. Should the fixed fee mandatory flag be removed in the future, STR8 pool will 
+          reduce the fixed fee to 0 ADA and increase the variable fee to 4.00%.
           </p>
-
-
+          <p>
+          The following table transparently shows the fee effects based on total stake. All rewards are by epoch:
+          </p>
   <table>
   <thead>
     <tr>
@@ -119,53 +121,35 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td data-label="Remark">first change at</td>
-      <td data-label="ADA staked [₳]">15,000,000</td>
-      <td data-label="Variable fee [%]">0.75%</td>
-      <td data-label="Fixed fee [₳]">340</td>
-      <td data-label="Effective fee [%]">3.93%</td>
-      <td data-label="Effective cost [%]">0.20%</td>
-      <td data-label="Delegator rewards [₳]">68</td>
-    </tr>
-    <tr>
-      <td data-label="Remark">change at</td>
-      <td data-label="ADA staked [₳]">20,000,000</td>
-      <td data-label="Variable Fee [%]">1.50%</td>
-      <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">3.89%</td>
-      <td data-label="Effective cost [%]">0.20%</td>
-      <td data-label="Delegator rewards [₳]">68</td>
-    </tr>
-    <tr>
-      <td data-label="Remark">change at</td>
-      <td data-label="ADA staked [₳]">25,000,000</td>
-      <td data-label="Variable Fee [%]">2.00%</td>
-      <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">3.91%</td>
-      <td data-label="Effective cost [%]">0.20%</td>
-      <td data-label="Delegator rewards [₳]">68</td>
-    </tr>
      <tr>
-      <td data-label="Remark">change at</td>
-      <td data-label="ADA staked [₳]">30,000,000</td>
-      <td data-label="Variable Fee [%]">2.50%</td>
+      <td data-label="Remark">~ saturation d = 1000</td>
+      <td data-label="ADA staked [₳]">32,000,000</td>
+      <td data-label="Variable Fee [%]">3.00%</td>
       <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">4.09%</td>
-      <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Effective Fee [%]">4.49%</td>
+      <td data-label="Effective cost [%]">0.23%</td>
       <td data-label="Delegator rewards [₳]">68</td>
     </tr>
     <tr>
-      <td data-label="Remark">change at</td>
+      <td data-label="Remark"></td>
       <td data-label="ADA staked [₳]">35,000,000</td>
-      <td data-label="Variable Fee [%]">2.75%</td>
+      <td data-label="Variable Fee [%]">3.00%</td>
       <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">4.11%</td>
-      <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Effective Fee [%]">4.36%</td>
+      <td data-label="Effective cost [%]">0.23%</td>
       <td data-label="Delegator rewards [₳]">68</td>    
     </tr>
     <tr>
-      <td data-label="Remark">change at</td>
+      <td data-label="Remark"></td>
+      <td data-label="ADA staked [₳]">40,000,000</td>
+      <td data-label="Variable Fee [%]">3.00%</td>
+      <td data-label="Fixed Fee [₳]">340</td>
+      <td data-label="Effective Fee [%]">4.19%</td>
+      <td data-label="Effective cost [%]">0.22%</td>
+      <td data-label="Delegator rewards [₳]">68</td>      
+    </tr>
+    <tr>
+      <td data-label="Remark"></td>
       <td data-label="ADA staked [₳]">45,000,000</td>
       <td data-label="Variable Fee [%]">3.00%</td>
       <td data-label="Fixed Fee [₳]">340</td>
@@ -174,22 +158,40 @@
       <td data-label="Delegator rewards [₳]">68</td>      
     </tr>
     <tr>
-      <td data-label="Remark">final change</td>
-      <td data-label="ADA staked [₳]">55,000,000</td>
-      <td data-label="Variable Fee [%]">3.25%</td>
+      <td data-label="Remark"></td>
+      <td data-label="ADA staked [₳]">50,000,000</td>
+      <td data-label="Variable Fee [%]">3.00%</td>
       <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">4.12%</td>
+      <td data-label="Effective Fee [%]">3.95%</td>
       <td data-label="Effective cost [%]">0.21%</td>
+      <td data-label="Delegator rewards [₳]">68</td>      
+    </tr>  
+    <tr>
+      <td data-label="Remark"></td>
+      <td data-label="ADA staked [₳]">55,000,000</td>
+      <td data-label="Variable Fee [%]">3.00%</td>
+      <td data-label="Fixed Fee [₳]">340</td>
+      <td data-label="Effective Fee [%]">3.87%</td>
+      <td data-label="Effective cost [%]">0.20%</td>
       <td data-label="Delegator rewards [₳]">68</td>     
+    </tr>  
+    <tr>
+      <td data-label="Remark"></td>
+      <td data-label="ADA staked [₳]">60,000,000</td>
+      <td data-label="Variable Fee [%]">3.00%</td>
+      <td data-label="Fixed Fee [₳]">340</td>
+      <td data-label="Effective Fee [%]">3.80%</td>
+      <td data-label="Effective cost [%]">0.20%</td>
+      <td data-label="Delegator rewards [₳]">69</td>     
     </tr>   
     <tr>
-      <td data-label="Remark">close to saturation</td>
-      <td data-label="ADA staked [₳]">63,810,000</td>
-      <td data-label="Variable Fee [%]">3.25%</td>
+      <td data-label="Remark">~ saturation d = 500</td>
+      <td data-label="ADA staked [₳]">64,000,000</td>
+      <td data-label="Variable Fee [%]">3.00%</td>
       <td data-label="Fixed Fee [₳]">340</td>
-      <td data-label="Effective Fee [%]">4.00%</td>
-     <td data-label="Effective cost [%]">0.21%</td>
-      <td data-label="Delegator rewards [₳]">68</td>     
+      <td data-label="Effective Fee [%]">3.75%</td>
+     <td data-label="Effective cost [%]">0.19%</td>
+      <td data-label="Delegator rewards [₳]">69</td>     
     </tr>   
   </tbody>
         </table>
@@ -203,7 +205,7 @@
           (If you want to verify the formulas behind this table, feel free to view the full spreadsheet for calculation <a href="STR8-PoolFee.ods">here</a>. In the yellow cell your can enter your own stake to update the average delegator rewards.)
           </p>
           <p>
-          STR8 pools low 4% effective reward fee is actually 0.2% cost for delegators per annum if the gross expected ROS is 5.2%. Please remember crypto can fluctuate 2-10% per day, so I believe STR8 has very competitive fees. 
+          STR8 pools low ~4% effective reward fee is actually 0.2% cost for delegators per annum if the gross expected ROS is 5.2%. Please remember crypto can fluctuate 2-10% per day, so I believe STR8 has very competitive fees. 
           </p>
 
           <h4 class="mt-4">Where do I get updates on this pool?</h4>
@@ -219,12 +221,13 @@
             <li><a href="https://cardano.org/stake-pool-delegation/">Official information on stake pool delegation</a></li>
             <li><a href="https://iohk.io/en/blog/posts/2020/11/13/the-general-perspective-on-staking-in-cardano/">Official perspective on staking</a></li>
             <li><a href="https://cardano.org/calculator/?calculator=delegator/">Staking calculator</a></li>
+            <li><a href="https://cardano-community.github.io/support-faq/#/rewards">Community rewards FAQ</a></li>
             <!-- <li><a href="https://shelleyexplorer.cardano.org/en/stake-pool/3a192bc7285d7ddfd77c0b854b4008bbf4c5fe53d1ad42770f6ffdf9b3d4c7d6">Explore this pool on Shelley explorer</a></li>-->
             <li><a href="https://pooltool.io/">Pooltool</a></li>
             <li><a href="https://explorer.cardano.org/en">Cardano.org explorer</a></li>
           </ul>
 
-          <p>This document was last updated on December 8th, 2020</p>        
+          <p>This document was last updated on December 31st, 2020</p>        
           <p class="p-2"></p>
         </div>
       </div>

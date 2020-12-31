@@ -101,8 +101,12 @@
           <h4 class="mt-4">Was ist mit der "effektiven" Gebühr von 4% gemeint?</h4>
           <p>Ich bin nicht damit einverstanden, eine feste Gebühr von 340 ADA zu erheben, unabhängig von der Anzahl der Blöcke, die der STR8-Pool produziert. Mein Grund ist die Solidarität mit Dir, meinem hochgeschätzten Delegator. Indem wir uns nur auf die variable Gebühr verlassen, teilen wir das Risiko. Ich glaube an Cardano und wir stecken hier gemeinsam drin. Wenn Dein Stake gut läuft, laufen die Poolrewards gut. Wir teilen die guten Tage, wir teilen die schlechten Tage. Um einen einzelnen, nachhaltigen Pool zu betreiben, benötigt STR8 lediglich 4,0% als effektive Gebühr.</p>
           <p>
-          Wir beginnen mit einer variablen Gebühr von 0% und der obligatorischen festen Gebühr von 340 ADA pro Epoche (bei mindestens einem produzierten Block). Die folgende Tabelle gibt einen transparenten Überblick über die Schritte der dynamischen Gebührenanpassung auf Grundlage des gesamten Stakes. All Rewards sind per Epoche angegeben:
+          Solange es eine obligatorische feste Gebühr von 340 ADA gibt, verwendet der STR8 Pool eine variable Gebühr von 3,00 %. Sollte der gesamte Stake jemals wieder unter 5 Mio. ADA fallen, wird der STR8-Pool wieder in den Bootstrap-Modus wechseln und die variable Gebühr auf 0,00 % reduzieren. Sollte die feste Gebühr in der Zukunft nicht mehr obligatorisch sein, reduziert STR8-Pool die feste Gebühr auf 0 ADA und erhöht die variable Gebühr auf 4,00 %.
           </p>
+          <p>
+          Die folgende Tabelle gibt einen transparenten Überblick über die Effekte der Gebühren auf Grundlage des gesamten Stakes. Alle Rewards sind per Epoche angegeben:
+          </p>
+
        <table>
   <thead>
     <tr>
@@ -116,77 +120,77 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td data-label="Bemerkung">erste Änderung bei</td>
-      <td data-label="ADA staked [₳]">15,000,000</td>
-      <td data-label="Variable Gebühr [%]">0.75%</td>
-      <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">3.93%</td>
-      <td data-label="Effective Kosten [%]">0.20%</td>
-      <td data-label="Delegator Rewards [₳]">68</td>    
-    </tr>
-    <tr>
-      <td data-label="Bemerkung">Änderung bei</td>
-      <td data-label="ADA staked [₳]">20,000,000</td>
-      <td data-label="Variable Gebühr [%]">1.50%</td>
-      <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">3.89%</td>
-      <td data-label="Effective Kosten [%]">0.20%</td>
-      <td data-label="Delegator Rewards [₳]">68</td>    
-    </tr>
-    <tr>
-      <td data-label="Bemerkung">Änderung bei</td>
-      <td data-label="ADA staked [₳]">25,000,000</td>
-      <td data-label="Variable Gebühr [%]">2.00%</td>
-      <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">3.91%</td>
-      <td data-label="Effective Kosten [%]">0.20%</td>
-      <td data-label="Delegator Rewards [₳]">68</td>    
-    </tr>
      <tr>
-      <td data-label="Bemerkung">Änderung bei</td>
-      <td data-label="ADA staked [₳]">30,000,000</td>
-      <td data-label="Variable Gebühr [%]">2.50%</td>
+      <td data-label="Bemerkung">~ Saturierungsgrenze d = 1000</td>
+      <td data-label="ADA staked [₳]">32,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">4.09%</td>
-      <td data-label="Effective Kosten [%]">0.21%</td>
+      <td data-label="Effektive Gebühr [%]">4.49%</td>
+      <td data-label="Effektive Kosten [%]">0.23%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>
+    </tr>
+    <tr>
+      <td data-label="Bemerkung"></td>
+      <td data-label="ADA staked [₳]">35,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">4.36%</td>
+      <td data-label="Effektive Kosten [%]">0.23%</td>
       <td data-label="Delegator Rewards [₳]">68</td>    
     </tr>
     <tr>
-      <td data-label="Bemerkung">Änderung bei</td>
-      <td data-label="ADA staked [₳]">35,000,000</td>
-      <td data-label="Variable Gebühr [%]">2.75%</td>
+      <td data-label="Bemerkung"></td>
+      <td data-label="ADA staked [₳]">40,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">4.11%</td>
-      <td data-label="Effective Kosten [%]">0.21%</td>
-      <td data-label="Delegator Rewards [₳]">68</td>     
+      <td data-label="Effektive Gebühr [%]">4.19%</td>
+      <td data-label="Effektive Kosten [%]">0.22%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>      
     </tr>
     <tr>
-      <td data-label="Bemerkung">Änderung bei</td>
+      <td data-label="Bemerkung"></td>
       <td data-label="ADA staked [₳]">45,000,000</td>
       <td data-label="Variable Gebühr [%]">3.00%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
       <td data-label="Effektive Gebühr [%]">4.06%</td>
-      <td data-label="Effective Kosten [%]">0.21%</td>
-      <td data-label="Delegator Rewards [₳]">68</td>  
+      <td data-label="Effektive Kosten [%]">0.21%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>      
     </tr>
     <tr>
-      <td data-label="Bemerkung">Finale Änderung</td>
-      <td data-label="ADA staked [₳]">55,000,000</td>
-      <td data-label="Variable Gebühr [%]">3.25%</td>
+      <td data-label="Bemerkung"></td>
+      <td data-label="ADA staked [₳]">50,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">4.12%</td>
-      <td data-label="Effective Kosten [%]">0.21%</td>
-      <td data-label="Delegator Rewards [₳]">68</td>  
+      <td data-label="Effektive Gebühr [%]">3.95%</td>
+      <td data-label="Effektive Kosten [%]">0.21%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>      
+    </tr>  
+    <tr>
+      <td data-label="Bemerkung"></td>
+      <td data-label="ADA staked [₳]">55,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">3.87%</td>
+      <td data-label="Effektive Kosten [%]">0.20%</td>
+      <td data-label="Delegator Rewards [₳]">68</td>     
+    </tr>  
+    <tr>
+      <td data-label="Remark"></td>
+      <td data-label="ADA staked [₳]">60,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
+      <td data-label="Feste Gebühr [₳]">340</td>
+      <td data-label="Effektive Gebühr [%]">3.80%</td>
+      <td data-label="Effective cost [%]">0.20%</td>
+      <td data-label="Delegator Rewards [₳]">69</td>     
     </tr>   
     <tr>
-      <td data-label="Bemerkung">Nahe der Saturierungsgrenze</td>
-      <td data-label="ADA staked [₳]">63,810,000</td>
-      <td data-label="Variable Gebühr [%]">3.25%</td>
+      <td data-label="Bemerkung">~ Saturierungsgrenze d = 500</td>
+      <td data-label="ADA staked [₳]">64,000,000</td>
+      <td data-label="Variable Gebühr [%]">3.00%</td>
       <td data-label="Feste Gebühr [₳]">340</td>
-      <td data-label="Effektive Gebühr [%]">4.00%</td>
-      <td data-label="Effective Kosten [%]">0.21%</td>
-      <td data-label="Delegator Rewards [₳]">68</td>  
+      <td data-label="Effektive Gebühr [%]">3.75%</td>
+      <td data-label="Effective Kosten [%]">0.19%</td>
+      <td data-label="Delegator Rewards [₳]">69</td>  
     </tr>   
   </tbody>
         </table>
@@ -201,7 +205,7 @@
           (Wenn Du die Formeln hinter dieser Tabelle überprüfen möchtest, kannst du gerne <a href="STR8-PoolFee.ods">hier</a> das vollständige Tabellenblatt zur Berechnung einsehen. In der gelben Zelle kannst Du deinen eigene Stake eingeben, um die durchschnittlichen Rewards zu aktualisieren.)
           </p>
           <p>
-          STR8 Pools niedrige effektive Gebühr von 4% auf den Rewards entspricht tatsächlich 0,2% Kosten für Delegierte pro Jahr, wenn der Brutto ROS 5,2% beträgt. Bitte nicht vergessen, dass Crypto 2-10% pro Tag schwanken kann, daher glaube ich, dass STR8 sehr wettbewerbsfähige Gebühren hat.
+          STR8 Pools niedrige effektive Gebühr von ~4% auf den Rewards entspricht tatsächlich 0,2% Kosten für Delegierte pro Jahr, wenn der Brutto ROS 5,2% beträgt. Bitte nicht vergessen, dass Crypto 2-10% pro Tag schwanken kann, daher glaube ich, dass STR8 sehr wettbewerbsfähige Gebühren hat.
           </p>
 
           <h4 class="mt-4">Wo erhalte ich Updates zu diesem Pool?</h4>
@@ -217,13 +221,13 @@
             <li><a href="https://cardano.org/stake-pool-delegation/">Offizielle Informationen über Stake Pool Delegation (Englisch)</a></li>
             <li><a href="https://iohk.io/en/blog/posts/2020/11/13/the-general-perspective-on-staking-in-cardano/">Offizieller Blickwinkel über Delegation (Englisch)</a></li>
             <li><a href="https://cardano.org/calculator/?calculator=delegator/">Staking Rechner (Englisch)</a></li>
-
+            <li><a href="https://cardano-community.github.io/support-faq/#/rewards">Community rewards FAQ (Englisch)</a></li>
             <!-- <li><a href="https://shelleyexplorer.cardano.org/en/stake-pool/3a192bc7285d7ddfd77c0b854b4008bbf4c5fe53d1ad42770f6ffdf9b3d4c7d6">Diesen Pool im Shelley Explorer tracken (Englisch)</a></li>-->
-            <li><a href="https://pooltool.io/">Pooltool  (Englisch)</a></li>
+            <li><a href="https://pooltool.io/">Pooltool  (Deutsch einstellbar)</a></li>
             <li><a href="https://explorer.cardano.org/en">Cardano.org  Explorer  (Englisch)</a></li>
           </ul>
 
-          <p>Dieses Dokument wurde zuletzt am 8. Dezember 2020 bearbeitet.</p>        
+          <p>Dieses Dokument wurde zuletzt am 31. Dezember 2020 bearbeitet.</p>        
           <p class="p-2"></p>
         </div>
       </div>
