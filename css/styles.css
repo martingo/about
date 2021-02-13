@@ -63,3 +63,6 @@ a.ptwidget {
    color: #ffffff;
 }
 
+meter::-webkit-meter-optimum-value {
+    background: Navy; /* Green */
+}

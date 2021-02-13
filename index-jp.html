@@ -31,7 +31,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <h1 class="mt-4">ストレートプール</h1>
-          <p class="pool-links">ティッカー: STR8 | プールＩＤ: <span id="poolid">000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00</span> <input type="image" src="content_copy-black-18dp.svg" onclick="copyToClipboard('#poolid')" /> | 効果的に4％数料 | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io プロフィール <i class="fa fa-external-link " ></i></a></p>
+          <p class="pool-links">ティッカー: STR8 <span id="STR8-saturation"></span> | プールＩＤ: <span id="poolid">000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00</span> <input type="image" src="content_copy-black-18dp.svg" onclick="copyToClipboard('#poolid')" /> | 効果的に4％数料 | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io プロフィール <i class="fa fa-external-link " ></i></a></p>
           <img src="./SP-Logo.svg" width="250px" />
           <p class="font-italic">"振り返るべき唯一の時間は、あなたがどこまで来たかを見るだけです。"</p>
         </div>
@@ -101,8 +101,6 @@
           <p>効果的 プールの利益率は、実際には獲得した報酬のわずか4％です。報酬の96％を維持します。 STR8は、エポックごとに340 ADAの固定必須料金を回避するために動的変数料金を適用します。</p>
 
           <p>持続不可能な料金体系で始まる他のプールが最終的に行うように、変動料金を突然4％を超えて引き上げることはしません。代議員として、私はあなたに私のプールに委任する安心を与えたいと思います。</p>
-
-          <p>私は分散化を支持します。私はカルダノのステークプールSTR8だけを所有するか、代表することを約束します。</p>
 
           <h4 class="mt-4">実効性のある」4％の料金とは</h4>
           <p>
@@ -237,7 +235,7 @@
             <li><a href="https://explorer.cardano.org/ja">Cardano.org  エクスプ ローラー  (英語)</a></li>
           </ul>
 
-          <p>このドキュメントの最終更新日は2021年01月21日です</p>        
+          <p>このドキュメントの最終更新日は2021年02月13日です</p>        
           <p class="p-2"></p>
         </div>
       </div>
@@ -260,6 +258,10 @@
   document.execCommand("copy");
   $temp.remove();
 }
+
+$.getJSON('https://js.adapools.org/pools/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/summary.json', function(apjs)  {
+document.getElementById("STR8-saturation").innerHTML = '<meter value="' + apjs.data.saturated + '"></meter>' 
+ });
 </script>
 
 <!--

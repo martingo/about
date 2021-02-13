@@ -31,11 +31,15 @@
         </div>
         <div class="col-lg-12 text-center">
           <h1 class="mt-4">Straight Pool</h1>
-          <p class="pool-links">Ticker: STR8 | Pool-ID: <span id="poolid">000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00</span> <input type="image" src="content_copy-black-18dp.svg" onclick="copyToClipboard('#poolid')" /> | 4% effective fee | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io profile <i class="fa fa-external-link " ></i></a></p>
+          <p class="pool-links">Ticker: STR8  <span id="STR8-saturation"></span> | Pool-ID: <span id="poolid">000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00</span> <input type="image" src="content_copy-black-18dp.svg" onclick="copyToClipboard('#poolid')" /> | 4% effective fee | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io profile <i class="fa fa-external-link " ></i></a></p>
           <img src="./SP-Logo.svg" width="250px" />
           <p class="font-italic">"The only time you should ever look back, is to see how far you've come."</p>
-        </div>
+        </div>        
       </div>
+
+<script>
+
+</script>
 
 <!--
 <div class="container-fluid">
@@ -64,7 +68,8 @@
           <p>The "Cardano Straight ADA Stakepool" aims to secure the Cardano network by running a competitive 24/7 pool on decentralized infrastructure maintained by IT professionals. The low fees ensure longevity and sustainability of the pool, there is no other purpose, thus the name of our pool. This pool intention is to provide reliable Cardano infrastructure / protocol service with high desirability for you as a delegator. 
           </p>
           STR8 pool highly appreciates anyone already delegating to us or planning to do so. We will do our best to get you the rewards you deserve for being an early adopter of Cardano!
-          It is risk free to delegate your stake, consider delegating to STR8 today to earn rewards.
+          It is risk free to delegate your stake, consider delegating to STR8 today to earn rewards. 
+
 
           <h4 class="mt-4">What are the three core values of your stake pool?</h4>
           <ol>
@@ -97,7 +102,6 @@
           <p>The pool profit margin is effectively only 4% of your reward, you keep 96% of your reward. Please note we are talking about reward, not your staking amount. STR8 applies a dynamic variable fee to circumvent the fixed mandatory fee of 340 ADA per epoch.
           </p>
           <p>I will not suddenly raise my variable fees above 4% like what other pools starting with unsustainable fee structures will eventually do. As a delegator I want to give you peace of mind delegating to my pool.</p>
-          <p>I champion decentralization: I commit to only ever own or represent a single Cardano stake pool, STR8.</p>
 
           <h4 class="mt-4">What do you mean by an "effective" fee of 4%?</h4>
           <p>I do not agree taking a fixed fee of 340 ADA independent of the number of blocks STR8 pool produces. My reason is solidarity with you, my highly appreciated delegator. By relying only on profit margin, we share the risk. I believe in Cardano and we are in this together. STR8 pool shares the good and bad days with its delegators by relying solely on the variable fee. To run a single, sustainable pool, STR8 requires merely ~4.0% of effective fee.</p>
@@ -227,7 +231,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org explorer</a></li>
           </ul>
 
-          <p>This document was last updated on January 21st, 2021</p>        
+          <p>This document was last updated on February 13th, 2021</p>        
           <p class="p-2"></p>
         </div>
       </div>
@@ -250,6 +254,10 @@
   document.execCommand("copy");
   $temp.remove();
 }
+
+$.getJSON('https://js.adapools.org/pools/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/summary.json', function(apjs)  {
+document.getElementById("STR8-saturation").innerHTML = '<meter value="' + apjs.data.saturated + '"></meter>' 
+ });
 </script>
 
 <!--

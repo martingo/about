@@ -31,7 +31,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <h1 class="mt-4">Straight Pool</h1>
-          <p class="pool-links">Ticker: STR8 | Pool-ID: <span id="poolid">000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00</span> <input type="image" src="content_copy-black-18dp.svg" onclick="copyToClipboard('#poolid')" /> | 4% effektive Gebühr | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io Profil <i class="fa fa-external-link " ></i></a></p>
+          <p class="pool-links">Ticker: STR8 <span id="STR8-saturation"></span> | Pool-ID: <span id="poolid">000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00</span> <input type="image" src="content_copy-black-18dp.svg" onclick="copyToClipboard('#poolid')" /> | 4% effektive Gebühr | <a href="https://pooltool.io/pool/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/blocks" target="_blank" rel="noopener noreferrer">Pooltool.io Profil <i class="fa fa-external-link " ></i></a></p>
           <img src="./SP-Logo.svg" width="250px" />
           <p class="font-italic">"Schaue nur zurück, um zu sehen, wie weit du gekommen bist."</p>
         </div>
@@ -96,7 +96,6 @@
           <p>Ich hoffe, dass mein Pool für Dich als Delegator sehr interessant ist. Ich habe es mir auf die Fahne geschrieben, diesen Pool ohne Zeitbegrenzung mit angemessenen, aber niedrigen Gebühren zu betreiben. Ich bin ein IT-Experte, sodass Du sicher sein kannst, dass mein Pool immer alle Best Practices umgesetzt hat.</p> 
           <p>Die Pool-Gebühr beträgt effektiv lediglich 4% Deines Rewards, Du erhältst 96% deiner Rewards. Bitte dabei beachten, dass wir hier über den Reward reden und nicht um den gesamten Stakeeinsatz. STR8 wendet zur Umgeheung der fixen Pflichtgebühr von 340 ADA pro Epoche eine dynamische variable Gebühr an.</p>
           <p>Ich werde nicht plötzlich meine variablen Gebühren über 4% erhöhen, wie es andere Pools, die mit nicht nachhaltigen Gebührenstrukturen beginnen, letztendlich tun müssen. Als Delegator möchte ich Dir die Gewissheit geben sicher an meinen Pool delegieren zu können.</p>
-          <p>Ich setze mich für die Dezentralisierung ein: Ich verpflichte mich, immer nur einen einzigen Cardano-Stakepool, STR8, zu besitzen oder zu vertreten.</p>
 
           <h4 class="mt-4">Was ist mit der "effektiven" Gebühr von 4% gemeint?</h4>
           <p>Ich bin nicht damit einverstanden, eine feste Gebühr von 340 ADA zu erheben, unabhängig von der Anzahl der Blöcke, die der STR8-Pool produziert. Mein Grund ist die Solidarität mit Dir, meinem hochgeschätzten Delegator. Indem wir uns nur auf die variable Gebühr verlassen, teilen wir das Risiko. Ich glaube an Cardano und wir stecken hier gemeinsam drin. Wenn Dein Stake gut läuft, laufen die Poolrewards gut. Wir teilen die guten Tage, wir teilen die schlechten Tage. Um einen einzelnen, nachhaltigen Pool zu betreiben, benötigt STR8 lediglich 4,0% als effektive Gebühr.</p>
@@ -227,7 +226,7 @@
             <li><a href="https://explorer.cardano.org/en">Cardano.org  Explorer  (Englisch)</a></li>
           </ul>
 
-          <p>Dieses Dokument wurde zuletzt am 21. Januar 2021 bearbeitet.</p>        
+          <p>Dieses Dokument wurde zuletzt am 13. Februrar 2021 bearbeitet.</p>        
           <p class="p-2"></p>
         </div>
       </div>
@@ -250,6 +249,10 @@
   document.execCommand("copy");
   $temp.remove();
 }
+
+$.getJSON('https://js.adapools.org/pools/000006d97fd0415d2dafdbb8b782717a3d3ff32f865792b8df7ddd00/summary.json', function(apjs)  {
+document.getElementById("STR8-saturation").innerHTML = '<meter value="' + apjs.data.saturated + '"></meter>' 
+ });
 </script>
 
 <!-- 
