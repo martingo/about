@@ -58,12 +58,6 @@ meter::-webkit-meter-optimum-value {
     background: Navy; /* Green */
 }
 
-div.contentCopy input {
-    background:url(/content_copy-white-18dp.svg) no-repeat;
-    border: none;
-
-}
-
 .footer {
   background-color: #f5f5f5; 
 }
@@ -75,8 +69,6 @@ div.contentCopy input {
 .footer a {
     color: rgba(0,0,0,.9) !important;
   }
-
-
 
 @media (prefers-color-scheme: dark) {
   body {
